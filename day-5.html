@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .colored-text{
+            color: red;
+            background-color: aquamarine;
+        }
+        .bg-img{
+            width: 300px;
+            height: 300px;
+            color: white;
+            background-image: url(https://th.bing.com/th/id/OIP.cXlP9ID6Vy6Zh3weIIpU6AHaFj?rs=1&pid=ImgDetMain);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        .block{
+            display: block;
+            background: #f8b400;
+            margin-bottom: 10px;
+        }
+        .inline{
+            display: inline;
+            margin-bottom: 10px;
+        }
+
+        .flex{
+            display: flex;
+            /* flex-direction: column-reverse; */
+            flex-direction: row-reverse;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+        .grid-card{
+            width: 200px;
+            height: 200px;
+            background-color: chartreuse;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Text color -->
+     <p class="colored-text">This is a color text</p>
+
+     <div class="bg-img">
+        Welcome to bg tutorial
+     </div>
+
+     <!-- Display and positioning -->
+      <div class="Block">
+        <p>Block Diplay</p>
+        <p>Block Diplay</p>
+        <p>Block Diplay</p>
+        <p>Block Diplay</p>
+        <p>Block Diplay</p>
+      </div>
+      <div class="inline">
+        <p>Inline Display</p>
+        <p>Inline Display</p>
+        <p>Inline Display</p>
+        <p>Inline Display</p>
+      </div>
+
+      <div class="flex">
+        <p>flex Display-1</p>
+        <p>flex Display-2</p>
+        <p>flex Display-3</p>
+        <p>flex Display-4</p>
+      </div>
+
+      <div class="grid">
+        <p>grid Display-1</p>
+        <p>grid Display-2</p>
+        <p>grid Display-3</p>
+        <p>grid Display-4</p>
+        <p>grid Display-1</p>
+        <p>grid Display-2</p>
+        <p>grid Display-3</p>
+        <p>grid Display-4</p>
+      </div>
+
+      <div class="grid">
+        <div class="grid-card">This is a card</div>
+        <div class="grid-card">This is a card</div>
+        <div class="grid-card">This is a card</div>
+        <div class="grid-card">This is a card</div>
+        <div class="grid-card">This is a card</div>
+        <div class="grid-card">This is a card</div>
+      </div>
+
+</body>
+</html>
