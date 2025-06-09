@@ -46,6 +46,17 @@
             background-color: chartreuse;
             color: white;
         }
+        .relative-box{
+            position: relative;
+            width: 300px;
+            height: 100px;
+            background-color: #f8b400;
+        }
+        .absolute-box{
+            position: absolute;
+            background: red;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -98,5 +109,13 @@
         <div class="grid-card">This is a card</div>
       </div>
 
+      <!-- positioning -->
+       <div class="relative-box">
+         This is parent
+         <div class="absolute-box">This is child</div>
+       </div>
+
 </body>
 </html>
+
+<!-- Try making 6 cards and place them in grid display with 4 cards per row -->
