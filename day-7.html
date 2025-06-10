@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .width-transition{
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 4s ease 1s;
+            margin: 30px;
+        }
+        .width-transition:hover{
+            width: 400px;
+        }
+
+        .button{
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            transition: background-color 3s ease 1s;
+        }
+        .button:hover{
+            background-color: red;
+        }
+        
+        .text{
+            font-size: 20px;
+            transition: font-size 4s ease-in-out;
+        }
+        .text:hover{
+            font-size: 40px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            transition: width 1s ease, height 1s ease;
+            margin-bottom: 20px;
+        }
+        .box:hover{
+            width: 150px;
+            height: 200px;
+        }
+        .scale{
+           width: 100px;
+           height: 100px;
+           background-color: teal;
+           transition: transform 1s ease-in-out;
+           margin-bottom: 20px;
+        }
+        .scale:hover{
+            transform: scale(1.5);
+        }
+        .fade{
+            font-size: 20px;
+            background-color: purple;
+            padding: 20px;
+            color: white;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+            margin-bottom: 20px;
+        }
+        .fade:hover{
+            opacity: 0.1;
+        }
+
+        .rotate{
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            transition: transform 1s ease-in-out;
+            margin-bottom: 20px;
+        }
+        .rotate:hover{
+            transform: rotate(60deg);
+        }
+
+        .radius{
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            border-radius: 5px;
+            transition: border-radius 1s ease-in;
+            margin-bottom: 20px;
+        }
+        .radius:hover{
+            border-radius: 30px;
+        }
+        .combine{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            transition: all 1s ease-in-out;
+        }
+        .combine:hover{
+            background-color: red;
+            width: 400px;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Transition -->
+     <!-- Width Transition -->
+      <div class="width-transition"></div>
+
+      <!-- button transition -->
+       <button class="button">Hover me</button>
+
+       <!-- Font transition -->
+        <p class="text">Hover to enlarge</p>
+
+        <div class="box"></div>
+
+        <!-- Scale transition -->
+        <div class="scale"></div>
+
+        <!-- Opacity trnasition -->
+         <div class="fade">Fade me out</div>
+
+         <!-- Rotate transition -->
+          <div class="rotate"></div>
+
+          <!-- Radius transition -->
+           <div class="radius"></div>
+
+           <!-- All transition -->
+            <div class="combine"></div>
+    </body>
+</html>
