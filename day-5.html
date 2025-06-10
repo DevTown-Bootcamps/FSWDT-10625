@@ -19,29 +19,44 @@
             padding-top: 20px;
             padding-left: 20px;
         }
-        .block{
+        .Block{
             display: block;
-            background: #f8b400;
             margin-bottom: 10px;
         }
+        .Block div{
+          width: 200px;
+          height: 200px;
+          background: greenyellow;
+        }
         .inline{
-            display: inline;
+            display:inline-block;
             margin-bottom: 10px;
+        }
+        .inline div{
+          width: 200px;
+          height: 200px;
+          background: greenyellow;
         }
 
         .flex{
             display: flex;
-            /* flex-direction: column-reverse; */
-            flex-direction: row-reverse;
+            /* flex-direction: column; */
+            gap: 10px;
+           
+        }
+        .flex div{
+          width: 200px;
+          height: 200px;
+          background: greenyellow;
         }
 
         .grid{
             display: grid;
-            grid-template-columns: repeat(4,1fr);
+            grid-template-columns: repeat(3,1fr);
             gap: 20px;
         }
         .grid-card{
-            width: 200px;
+            width: 400px;
             height: 200px;
             background-color: chartreuse;
             color: white;
@@ -69,24 +84,28 @@
 
      <!-- Display and positioning -->
       <div class="Block">
-        <p>Block Diplay</p>
-        <p>Block Diplay</p>
-        <p>Block Diplay</p>
-        <p>Block Diplay</p>
-        <p>Block Diplay</p>
+        <div>Block Diplay</div>
+        <div>Block Diplay</div>
+        <div>Block Diplay</div>
+        <div>Block Diplay</div>
+        <div>Block Diplay</div>
       </div>
       <div class="inline">
-        <p>Inline Display</p>
-        <p>Inline Display</p>
-        <p>Inline Display</p>
-        <p>Inline Display</p>
+        <div>Inline Display</div>
+        <div>Inline Display</div>
+        <div>Inline Display</div>
+        <div>Inline Display</div>
       </div>
 
       <div class="flex">
-        <p>flex Display-1</p>
-        <p>flex Display-2</p>
-        <p>flex Display-3</p>
-        <p>flex Display-4</p>
+        <div>flex Display-1</div>
+        <div>flex Display-2</div>
+        <div>flex Display-3</div>
+        <div>flex Display-4</div>
+        <div>flex Display-1</div>
+        <div>flex Display-2</div>
+        <div>flex Display-3</div>
+        <div>flex Display-4</div>
       </div>
 
       <div class="grid">
