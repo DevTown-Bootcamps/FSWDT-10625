@@ -153,3 +153,98 @@ body{
     color: #088178;
     padding: 14px 65px;
 }
+
+/* Feature Section */
+#feature{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: auto;
+    margin-bottom: 40px;
+}
+
+#feature .f-box{
+    width: 180px;
+    text-align: center;
+    padding: 20px 15px;
+    border: 1px solid #cce7d0;
+    border-radius: 5px;
+    margin: 15px 0;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+    transition: box-shadow 0.3s;
+
+}
+
+#feature .f-box:hover{
+    box-shadow: 10px 10px 54px rgba(0,0,0,0.1);
+}
+
+#feature .f-box img{
+    max-width: 150px;
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+
+/* Shooping */
+.product-section .pro-collection{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin:0 60px;
+}
+
+.product-section h1,
+.product-section p{
+    text-align: center;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.product-section .product-cart{
+    width: 280px;
+    border: 1px solid #ebebeb;
+    padding: 13px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+}
+
+.product-section .product-cart img{
+    width: 60px;
+    border-radius: 25px;
+}
+
+.product-section .product-cart span{
+    color: #969696;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.product-section .product-cart .stars{
+    color: #e6ae2c;
+    padding: 6px 0;
+}
+
+.product-section .product-cart .price{
+    color: #088178;
+    padding: 4px 0;
+}
+
+.product-section .product-cart .buy-icon{
+    color: #088178;
+    background-color: #c7e9e75e;
+    padding: 15px;
+    border-radius: 50px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+
