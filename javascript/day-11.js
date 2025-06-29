@@ -93,6 +93,29 @@ let val2 =76;
 
 // if val1 is greater than val2 then set val2=val1; else val1=val2;
 
+// Write a program in your preferred language to check whether a number entered by 
+// the user is positive, negative, or zero using if-else statements.
+
+// let a = 10;
+// if(a < 0){
+//     console.log("negative");
+// }
+// else{
+//    console.log("positive");
+// }
+
+let ab=10;
+
+if(ab<=0){
+    if(ab==0){
+        console.log("The number is 0");
+    }else{
+        console.log("The number is positive");
+    }
+}else{
+    console.log("The number is negative");
+}
+
 
 
 
