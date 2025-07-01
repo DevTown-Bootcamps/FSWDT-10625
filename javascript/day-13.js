@@ -52,3 +52,84 @@
 //create a array of number from 1 to 10, 
 // and update each element by nums[i]=nums[i]*2; untill the index of array is 7;
 
+// Nested loop-5*5=25; n*m times;
+// let a=1;
+// for(let i=0;i<5;i++){
+//     for(let j=0;j<5;j++){
+//       console.log(a++);
+//     }
+// }
+// i=0:
+//  j:0
+//  j:1
+//  j:2
+//  j:3
+//  j:4
+// i=1:
+//  j:0
+//  j:1
+//  j:2
+//  j:3
+//  j:4
+// i=2:
+//  j:0
+//  j:1
+//  j:3
+//  j:4
+// i=3:
+//  j:0
+//  j:1
+//  j:2
+//  j:3
+//  j:4
+// i=4:
+//  j:0
+//  j:1
+//  j:2
+//  j:3
+//  j:4
+
+
+
+
+// while loop
+// let i=0;
+// while(i<5){
+//   console.log(i);
+//   i++;
+// }
+
+// while(i<=5){
+//     if(i==4){
+//         break;
+//     }
+//     console.log(i);
+//     i++;
+// }
+
+//create a array of number from 1 to 10, 
+// and update each element by nums[i]=nums[i]*2; untill the index of array is 7;
+
+// do-while
+
+// let j=4;
+
+// do{
+//     console.log(j);
+//     j++;
+// }while(j<4)
+
+let nums=[1,2,3,4,5,6,7,8,9,10];
+let i=0;
+do{
+    if(i==7){
+        break;
+    }
+    nums[i]=nums[i]*2;
+    console.log(nums[i]);
+    i++;
+}while(i<nums.length)
+
+
+
+
