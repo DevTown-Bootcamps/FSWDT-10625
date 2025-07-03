@@ -35,14 +35,52 @@ let fruit=["cheery","apple",34,21,'C',false];
 // console.log(fruit.indexOf(34));
 
 //includes()-to check if any given element is present inside the array or not
-console.log(fruit.includes(21));
-console.log(fruit.includes(45));
+// console.log(fruit.includes(21));
+// console.log(fruit.includes(45));
 
 //slice(start,end)- return a part of array
 //let fruit=["cheery","apple",34,21,'C',false];
 
-console.log(fruit.slice(1,5));
+// console.log(fruit.slice(1,5));
 
 // take an Array, add 34,25 at the end of the Array, then add 66,23 to the starting of the Array, 
 // then do one pop(), and one shift(), then tell me your output.Tell me the index of 25 and 66.
 //then print element of array from 2nd index to 5th index.
+
+
+//String:collection of charaters- 'A','B'
+//A N S H U L
+//0 1 2 3 4 5
+
+let name="Anshul@121324.,.,;,'";
+
+//console.log(name);
+
+//console.log(name.charAt(2));
+//console.log(name.charAt(5));
+
+// for(let i=0;i<name.length;i++){
+//     console.log(name.charAt(i));
+// }
+
+console.log(name.toUpperCase());
+console.log(name.toLowerCase());
+console.log(name.indexOf('n'));
+console.log(name.includes('k'));
+console.log(name.slice(1,5));
+console.log(name.substring(1,5));
+console.log(name.substr(0,4));
+
+let a=" Anshul Ojha ";
+console.log(a.trim()); //remove extra spcess from begining and end of the string.
+
+let b="used to split each word in a string";
+console.log(b.split(" "));
+
+let firstname="Anshul";
+let lastname="Ojha"
+
+let s=firstname+" "+lastname;
+console.log(s);
+
+
