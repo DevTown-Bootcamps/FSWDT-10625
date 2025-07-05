@@ -66,7 +66,7 @@ let name="Anshul@121324.,.,;,'";
 console.log(name.toUpperCase());
 console.log(name.toLowerCase());
 console.log(name.indexOf('n'));
-console.log(name.includes('k'));
+console.log(name.includes('n'));
 console.log(name.slice(1,5));
 console.log(name.substring(1,5));
 console.log(name.substr(0,4));
@@ -82,5 +82,38 @@ let lastname="Ojha"
 
 let s=firstname+" "+lastname;
 console.log(s);
+
+
+//if-else
+
+//you have a variable z, this contains Number, check if this number is divisible by 5 as well as divisibility by 2
+// use logical operator in this;if it is divisible then 
+//print the value of z/5; else if it is not divisible then find the remender.
+
+//write a code to check if a number is prime or not
+
+//2,3,5,7,11
+
+if(num%2!=0&&num%3!=0&&num%5!=0&&num%7!=0&&num%11!=0){
+    console.log("Number is prime");
+}else{
+    console.log("Number is not prime");
+}
+
+//1
+//12
+//123
+//1234
+//12345
+
+
+// 12345
+// 1234
+// 123
+// 12
+// 1
+
+
+//create  a array of string and print only starting 2 index of the string;
 
 
