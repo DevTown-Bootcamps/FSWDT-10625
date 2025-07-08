@@ -114,3 +114,54 @@ const prd = (...number) => {
 }
 prd(2,3,4,5);
 
+// Write a function isEven that returns true if the given number is even.
+
+function isEven(num) {
+  return num % 2 === 0;
+}
+console.log(isEven(12)); 
+console.log(isEven(9));
+
+// Write a function sum that takes two numbers and returns their sum.
+
+// Write a function maxOfThree that returns the maximum of three numbers.
+function maxOfThree(x,y,z) {
+  let max;
+  if (x >= y && x >= z) {
+    max = x;
+  } else if (y >= x && y >= z) {
+    max = y;
+  } else {
+    max = z;
+  }
+  return max;
+}
+
+//Create a function factorial(n) that returns the factorial of a number n.
+
+function factorial(n) {
+  let facto = 1;
+  for (let i = 1; i <= n; i++) {
+    facto *= i;
+  }
+  return facto;
+}
+console.log(factorial(9));
+
+//Write a function fizzBuzz(n) that prints numbers from 1 to n. For multiples of 3, 
+// print "Fizz", for 5 print "Buzz".
+
+function fizzBuzz(n) {
+    for (let i = 1; i <= n; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("FizzBuzz");
+        } else if (i % 3 === 0) {
+            console.log("Fizz");
+        } else if (i % 5 === 0) {
+            console.log("Buzz");
+        } else {
+            console.log(i);
+        }
+    }
+}fizzBuzz(15);
+
