@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Hello</p>
+    <p class="test">Hello2</p>
+    <button onclick="ChangeText()">Click me</button>
+
+    <div id="innerhtml"></div>
+
+    <button id="btn">Click me</button>
+
+    <script>
+      //selction based on id and class name
+      let para=document.getElementById("demo");
+      console.log(para.innerText);
+      const paragraph=document.querySelectorAll(".test");
+      console.log(paragraph.innerText);
+      let tag=document.getElementsByTagName("p");
+
+      //Changing text inside html
+      function ChangeText(){
+         document.getElementById("demo").innerHTML="Hello this is a new text";
+         let para=document.getElementById("demo");
+         console.log(para.innerText);
+      }
+
+      //changin tags-addinig a tag inside another tag
+      document.getElementById('innerhtml').innerHTML="<strong>Hello,welcome to my site</strong>";
+
+      //change CSS
+      document.getElementById('demo').style.color="blue";
+      document.getElementById('demo').style.fontSize="30px";
+
+      //Handling cilck event
+      document.getElementById('btn').addEventListener("click",function(){
+        alert("Button was clicked");
+      })
+
+    </script>
+</body>
+</html>
