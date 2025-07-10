@@ -12,6 +12,15 @@
     <p id="para">This is para that I am trying to delete</p>
     <button onclick="remove()">Delete items</button>
 
+    <a id="link" href="https://www.geeksforgeeks.org/">Click Me</a>
+    <button onclick="chnageAlt()">Click to change the attribute</button>
+
+    <p class="color">One</p>
+    <p class="color">two</p>
+    <p class="color">three</p>
+    <p class="color">four</p>
+    <p class="color">five</p>
+
 
     <script>
         //append a new element.
@@ -27,6 +36,16 @@
         }
 
         //changing attribute
+        function chnageAlt(){
+               document.getElementById("link").setAttribute("href","https://www.youtube.com/")
+        }
+
+        //looping through element
+        let element=document.querySelectorAll(".color");
+        element.forEach(function(element){
+            element.style.color="red";
+        })
+
     </script>
 </body>
 </html>
