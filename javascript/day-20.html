@@ -32,6 +32,9 @@
 
      <div id="card">This card will get duplicated</div>
      <button onclick="duplicate()">Duplicate</button>
+
+     <div id="box" style="width: 100px; height: 100px; background-color: red;"></div>
+     <button onclick="moveBox()">Move</button>
     <script>
         function darktheme(){
             document.body.classList.toggle("dark-theme");
@@ -53,6 +56,18 @@
             const clone=card.cloneNode(true);
             document.body.appendChild(clone);
         }
+
+        function moveBox(){
+            let box=document.getElementById("box");
+            let pos=0;
+            let id=setInterval(()=>{
+                if(pos>=600) clearInterval(id);
+                else{
+                    pos++;
+                    box.style.transform=`translateY(${pos}px)`;
+                }
+            },5)
+       }
     </script>
 </body>
 </html>
