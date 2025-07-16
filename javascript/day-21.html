@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Counting number of counts -->
+    <button id="clickbtn">Click Me</button>
+    
+    <!-- Hover event listner -->
+     <div id="hoverbox">Hover me</div>
+
+     <!-- Keydown event -->
+      <input type="text" id="keyInput" placeholder="Type something here"/>
+
+    <script>
+        let count=0;
+        document.getElementById('clickbtn').addEventListener("click",function(){
+          count=count+1;
+          console.log(count);
+        });
+
+        document.getElementById("hoverbox").addEventListener("mouseover",function(){
+           this.style.background='orange';
+           this.textContent="Hovered";
+        })
+
+        document.getElementById("hoverbox").addEventListener("mouseout",function(){
+           this.style.background='white';
+           this.textContent="Hover over me";
+        })
+
+        document.getElementById("keyInput").addEventListener("keydown",function(){
+            console.log("Key pressed",event.key);
+        })
+    </script>
+</body>
+</html>
