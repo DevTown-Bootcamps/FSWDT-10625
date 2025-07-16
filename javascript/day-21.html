@@ -16,6 +16,20 @@
      <!-- Keydown event -->
       <input type="text" id="keyInput" placeholder="Type something here"/>
 
+      <!-- Change event -->
+       <select id="selectMenu">
+         <option value="">Choose an option</option>
+         <option value="apple">Apple</option>
+         <option value="Pineapple">Pineapple</option>
+         <option value="Banana">Banana</option>
+       </select>
+
+       <!-- Submit event -->
+        <form id="form">
+            <input type="text"  id="nameInput" placeholder="Enter your text here"/>
+            <button type="submit">Submit</button>
+        </form>
+
     <script>
         let count=0;
         document.getElementById('clickbtn').addEventListener("click",function(){
@@ -35,6 +49,17 @@
 
         document.getElementById("keyInput").addEventListener("keydown",function(){
             console.log("Key pressed",event.key);
+        })
+
+        //change event
+        document.getElementById("selectMenu").addEventListener("change",function(){
+          alert("There has been change in the selection: " + this.value);
+        })
+
+        document.getElementById("form").addEventListener("submit",function(e){
+            e.preventDefault();
+            const name=document.getElementById("nameInput").value;
+            alert("Your name is:" +name);
         })
     </script>
 </body>
