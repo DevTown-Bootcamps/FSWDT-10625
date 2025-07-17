@@ -10,7 +10,7 @@
 //  .finally(()=> console.log("Operation completed"));
 
 // const mypromise=new Promise((resolve,reject)=>{
-//     let success=false;
+//     let success=true;
 //     if(success){
 //         resolve("Operation is running");
 //     }else{
@@ -30,19 +30,44 @@
 //     });
 
 
-const failing=new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-        reject("Something went wrong");
-    },2000);
-});
+// const failing=new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         reject("Something went wrong");
+//     },2000);
+// });
 
-failing
-    .then(result=>{
-        console.log(result);
-    })
-    .catch(error=>{
-        console.log(error);
-    })
-    .finally(()=>{
-        console.log("I am a chill execution, will execute in any case");
-    })
+// failing
+//     .then(result=>{
+//         console.log(result);
+//     })
+//     .catch(error=>{
+//         console.log(error);
+//     })
+//     .finally(()=>{
+//         console.log("I am a chill execution, will execute in any case");
+//     })
+
+// Promise.all([mypromise,failing])
+//   .then(results=>{
+//     console.log("All promise resolved",results)
+//   })
+//   .catch(error=>{
+//     console.log("Any one or both promise failed");
+//   })
+
+// Race
+const fast=new Promise((resolve,reject)=>{
+   setTimeout(()=>{
+     resolve("First one");
+   },500)
+})
+
+const slow=new Promise((resolve,reject)=>{
+   setTimeout(()=>{
+    resolve("Second one");
+   },1000)
+})
+
+Promise.race([fast,slow]).then(result=>{
+  console.log(result);
+});
