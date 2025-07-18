@@ -71,3 +71,23 @@ const slow=new Promise((resolve,reject)=>{
 Promise.race([fast,slow]).then(result=>{
   console.log(result);
 });
+
+// implementing promise resolve the promise 
+// if a number is even in either case reject it
+function checkOddNumber(num) {
+  return new Promise((resolve, reject) => {
+    if (num % 2 === 0) {
+      reject(`Rejected: ${num} is even`);
+    } else {
+      resolve(`Resolved: ${num} is odd`);
+    }
+  });
+}
+
+checkOddNumber(7)
+  .then((message) => console.log(message))
+  .catch((error) => console.error(error));
+
+checkOddNumber(4)
+  .then((message) => console.log(message))
+  .catch((error) => console.error(error));
