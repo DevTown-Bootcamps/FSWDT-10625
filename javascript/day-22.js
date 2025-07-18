@@ -91,3 +91,9 @@ checkOddNumber(7)
 checkOddNumber(4)
   .then((message) => console.log(message))
   .catch((error) => console.error(error));
+
+
+  // implementing promise resolve the promise 
+// if a number is divisible by 3 in either case reject it
+
+//To make a calculator application, HTML,CSS AND JS.
