@@ -1,0 +1,69 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Build output
+dist/
+build/
+.next/
+out/
+
+# Coverage directory
+coverage/
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm/
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# dotenv environment variables
+.env
+.env.*.local
+
+# Local development
+*.local
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Debug
+*.log
+
+# Output of 'npm pack'
+*.tgz
+
+# Parcel cache
+.cache/
+
+# ESLint cache
+.eslintcache
+
+# Firebase
+.firebase/
+
+# Next.js export
+out/
+
+# Misc
+*.swp
