@@ -1,6 +1,7 @@
 // File FileSystem
 
 const fs=require('fs');
+const events=require('events');
 
 //Writing into a file
 
@@ -20,9 +21,25 @@ const fs=require('fs');
 
 //Reading the file
 
-const data=fs.readFileSync("test.txt",'utf-8');
-console.log(data);
+// const data=fs.readFileSync("test.txt",'utf-8');
+// console.log(data);
 
 //create one file named fileURL, write inside the file, read the file, then append inside the file, 
 //then read it again.
+
+//Events
+
+const myEmmiter=new events.EventEmitter();
+
+myEmmiter.on("fileDone",()=>{
+    console.log("The file read operation has been done");
+});
+
+fs.readFile("test.txt","utf-8",(err,data)=>{
+    if(err) throw err;
+    console.log(data);
+    myEmmiter.emit("fileDone");
+})
+
+
 
