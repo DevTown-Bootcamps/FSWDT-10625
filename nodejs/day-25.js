@@ -41,5 +41,7 @@ fs.readFile("test.txt","utf-8",(err,data)=>{
     myEmmiter.emit("fileDone");
 })
 
+//creat a event emiiter and trigger it for a  write operation.
+
 
 
