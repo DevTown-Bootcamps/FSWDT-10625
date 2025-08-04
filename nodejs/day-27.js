@@ -25,7 +25,7 @@ app.post("/api/todos",(req,res)=>{
     const {task}=req.body;
 
     if(!task){
-        return res.status(400).json({message:"Filed should not be empty"});
+        return res.status(400).json({message:"Field should not be empty"});
     }
 
     const newTodo={
@@ -37,6 +37,23 @@ app.post("/api/todos",(req,res)=>{
     todos.push(newTodo);
     res.status(200).json(newTodo);
 })
+
+app.put("/api/todos/:id",(req,res)=>{
+    const todo=todos.find(t=>t.id===parseInt(req.params.id));
+
+    if(!todo){
+        return res.status(404).json({message:"Item not found"});
+    }
+
+    const {task,done}=req.body;
+
+    if(task!==undefined) todo.task=task;
+    if(done!==undefined) todo.done=done;
+
+    res.json(todo);
+})
+
+
 
 app.listen(3000,()=>{
     console.log("Server has been started on port 3000");
