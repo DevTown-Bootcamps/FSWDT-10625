@@ -1,7 +1,7 @@
+// two types of making server http,express
 const http=require('http');
 const express=require('express');
-const app=express();
-
+const rid=express();
 // http.createServer((req,res)=>{
 //     if(req.url==="/"){
 //         res.end("Home page");
@@ -16,20 +16,16 @@ const app=express();
 //     console.log("Server running on port 8080");
 // })
 
-app.get("/",(req,res)=>{
+
+rid.get("/",(req,res)=>{
     res.send("Welcome to the home page");
 })
-
-
-app.get("/about",(req,res)=>{
-    res.send("Welcome to about page");
+rid.get("/about",(req,res)=>{
+    res.send("Wlecome to about page");
 })
 
-app.get("/contact",(req,res)=>{
+rid.get("/contact",(req,res)=>{
     res.send("Welcome to contact page");
 })
 
-app.listen(8080,()=>{console.log("Server running on port 8080")});
-
-
-
+rid.listen(8080,()=>{console.log("Server running on port 8080")});
