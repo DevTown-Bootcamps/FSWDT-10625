@@ -2,10 +2,18 @@ const expressStudent = require('express');
 const studentApp = expressStudent();
 studentApp.use(expressStudent.json());
 
-let students = [
-  { id: 1, name: 'Alice', course: 'Math', active: true },
-  { id: 2, name: 'Bob', course: 'Science', active: false }
-];
+// let students = [
+//   { id: 1, name: 'Alice', course: 'Math', active: true },
+//   { id: 2, name: 'Bob', course: 'Science', active: false }
+// ];
+
+//create db connection using mongodb-create a schema for the student and fetch and add the data to db directly.
+//create a mongodb atlas-cluster-connection string
+//create a connection using nodejs
+//create a schema for student-schema structure as you want
+//chnage the api code to fetch and post data to db.
+
+//optional-deploy the backend on render.
 
 // 📥 GET all students
 studentApp.get('/api/students', (req, res) => {
